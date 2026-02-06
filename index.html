@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabinet Agoè Logement et Construction | Immobilier & BTP Togo</title>
+    <style>
+        :root {
+            --primary: #003366; /* Bleu pro */
+            --secondary: #505050; /* Gris construction */
+            --accent: #e67e22; /* Orange action */
+            --light: #f4f4f4;
+            --white: #ffffff;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: #333; }
+        
+        /* Navigation */
+        nav { background: var(--primary); color: white; padding: 1rem; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { font-weight: bold; font-size: 1.2rem; }
+        nav ul { list-style: none; display: flex; margin: 0; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: white; text-decoration: none; font-size: 0.9rem; }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(0,51,102,0.7), rgba(0,51,102,0.7)), url('https://images.unsplash.com/photo-1582408921715-18e7806365c1?auto=format&fit=crop&q=80&w=1500') no-repeat center/cover; color: white; padding: 100px 20px; text-align: center; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .btn { display: inline-block; padding: 12px 25px; margin: 10px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn-primary { background: var(--accent); color: white; }
+        .btn-outline { border: 2px solid white; color: white; }
+
+        /* Sections */
+        section { padding: 60px 10%; }
+        h2 { color: var(--primary); border-bottom: 3px solid var(--accent); display: inline-block; margin-bottom: 30px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        
+        /* Cards */
+        .card { background: var(--white); border: 1px solid #ddd; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .price { color: var(--accent); font-weight: bold; font-size: 1.2rem; display: block; margin-top: 10px; }
+
+        /* Footer */
+        footer { background: #222; color: white; text-align: center; padding: 40px 20px; margin-top: 40px; }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            nav { flex-direction: column; }
+            nav ul { margin-top: 15px; padding: 0; }
+            .hero h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Cabinet Agoè Logement & Construction</div>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À Propos</a></li>
+            <li><a href="#biens">Nos Biens</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="accueil" class="hero">
+        <h1>Bâtissons votre avenir, logeons vos rêves</h1>
+        <p>Expertise Immobilière et BTP à Agoè, Lomé et environs.</p>
+        <a href="#biens" class="btn btn-primary">Voir nos biens disponibles</a>
+        <a href="#contact" class="btn btn-outline">Demander un devis BTP</a>
+    </section>
+
+    <section id="apropos">
+        <h2>Qui sommes-nous ?</h2>
+        <p>Le <strong>Cabinet Agoè Logement et Construction</strong> réunit l'immobilier et la construction pour offrir une solution complète. Basés à Agoè Sogbossito, nous accompagnons particuliers et investisseurs dans la sécurisation de leurs actifs immobiliers.</p>
+        <div class="grid">
+            <div class="card"><h3>Intégrité</h3><p>Documents vérifiés (Titres Fonciers, Plans visés) et transparence totale.</p></div>
+            <div class="card"><h3>Qualité</h3><p>Excellence des matériaux et suivi rigoureux de chaque chantier BTP.</p></div>
+        </div>
+    </section>
+
+    <section id="biens" style="background: var(--light);">
+        <h2>Nos Biens Disponibles</h2>
+        
+        <h3>📍 Terrains à vendre</h3>
+        <div class="grid">
+            <div class="card">
+                <h4>Terrain Mission Tové</h4>
+                <p>1 Lot (600 m²) | Plan visé OTR. Idéal investissement.</p>
+                <span class="price">7 500 000 FCFA</span>
+            </div>
+            <div class="card">
+                <h4>Agoè Logopé</h4>
+                <p>Demi-lot clôturé | Papier 3 tampons. Zone habitée.</p>
+            </div>
+        </div>
+
+        <h3>🏠 Locations & Ventes</h3>
+        <div class="grid">
+            <div class="card">
+                <h4>Appartement (Agoè Téléssou)</h4>
+                <p>2 Ch + Salon, cuisine, garage, Cashpower.</p>
+                <span class="price">90 000 FCFA / mois</span>
+            </div>
+            <div class="card">
+                <h4>Villa R+1 (Agoè Fil O Parc)</h4>
+                <p>5 Chambres, Haut Standing, Titre Foncier.</p>
+                <span class="price">40 000 000 FCFA</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <div class="grid">
+            <div>
+                <p><strong>📍 Adresse:</strong> Quartier Agoè Sogbossito, Lomé</p>
+                <p><strong>📞 Tél/WhatsApp:</strong> +228 92 96 44 02 / 97 91 14 14</p>
+                <p><strong>📧 Email:</strong> ictogo.228@gmail.com</p>
+                <p><strong>🕒 Horaires:</strong> Lun-Ven (08h-18h) | Sam (09h-13h)</p>
+            </div>
+            <div class="card">
+                <form>
+                    <input type="text" placeholder="Votre Nom" style="width:90%; padding:10px; margin-bottom:10px;"><br>
+                    <input type="text" placeholder="Téléphone" style="width:90%; padding:10px; margin-bottom:10px;"><br>
+                    <textarea placeholder="Votre message" style="width:90%; padding:10px; height:80px;"></textarea><br>
+                    <button type="submit" class="btn btn-primary" style="border:none; width:100%;">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>Cabinet Agoè Logement et Construction</strong></p>
+        <p>© 2026 Tous droits réservés. Expertise Immobilière & BTP au Togo.</p>
+    </footer>
+
+</body>
+</html>
